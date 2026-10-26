@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#fff8f2" />
+  <meta name="description" content="A first-month anniversary love story for Sherry, made by Austin." />
+  <title>Sherry & Austin — One Month</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&family=Gochi+Hand&family=Manrope:wght@300;400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300;1,6..72,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.27/dist/lenis.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="locked">
+  <div class="grain" aria-hidden="true"></div>
+  <canvas id="petals" aria-hidden="true"></canvas>
+  <section class="ask" id="ask" aria-labelledby="ask-title">
+    <div class="ask__blobs" aria-hidden="true"><i></i><i></i><i></i></div>
+    <div class="ask__card">
+      <p class="tiny-label">A tiny question from Austin</p>
+      <img class="ask__bears" id="ask-bears" src="assets/bears-gift.svg" alt="Two cute bears with a present" />
+      <h1 id="ask-title">Sherry, will you celebrate our<br /><em>first month</em> with me?</h1>
+      <p class="ask__hint" id="ask-hint">I made a little something just for you.</p>
+      <div class="ask__actions" id="ask-actions">
+        <button class="pill pill--yes" id="yes-button">Yes, of course <span>♡</span></button>
+        <button class="pill pill--no" id="no-button">No</button>
+      </div>
+      <p class="ask__attempt" id="ask-attempt" aria-live="polite"></p>
+    </div>
+    <p class="ask__footer">one month down • a whole story ahead</p>
+  </section>
+  <div class="site" id="site" aria-hidden="true">
+    <nav class="nav">
+      <a class="nav__logo" href="#home">S <span>♡</span> A</a>
+      <p>Our first month</p>
+      <a class="nav__link" href="#letter">For Sherry <span>↘</span></a>
+    </nav>
+    <main>
+      <section class="hero" id="home">
+        <div class="hero__orb hero__orb--one"></div><div class="hero__orb hero__orb--two"></div>
+        <div class="hero__copy">
+          <p class="tiny-label hero__eyebrow">A love note in five little chapters</p>
+          <h2><span>Sherry</span><i>&</i><span>Austin</span></h2>
+          <p class="hero__lede">One month of us, and somehow my ordinary days already feel a little more golden.</p>
+          <a class="round-link" href="#memories" aria-label="Scroll to our memories"><span>begin</span><b>↓</b></a>
+        </div>
+        <img class="hero__bears" src="assets/bears-tulips.svg" alt="Two illustrated bears sitting together with tulips" />
+        <div class="hero__scribble" aria-hidden="true">you + me</div>
+        <img class="hero__tulips hero__tulips--left" src="assets/tulip-stem.svg" alt="" />
+        <img class="hero__tulips hero__tulips--right" src="assets/tulip-stem.svg" alt="" />
+      </section>
+      <div class="ticker" aria-label="Happy one month anniversary"><div class="ticker__track"><span>HAPPY ONE MONTH</span><b>✦</b><span>MY FAVORITE HELLO</span><b>♡</b><span>THIRTY DAYS OF US</span><b>✦</b><span>HAPPY ONE MONTH</span><b>♡</b><span>MY FAVORITE HELLO</span><b>✦</b><span>THIRTY DAYS OF US</span><b>♡</b></div></div>
+      <section class="intro section">
+        <p class="section-index">01 / OUR LITTLE BEGINNING</p>
+        <div class="intro__grid"><h2>Some people feel like<br /><em>a beautiful surprise.</em></h2><div class="intro__note"><span class="scribble">that’s you, Sherry</span><p>In just one month, you have given me so many moments I want to keep—the laughs, the softness, the late conversations, and the comfort of simply knowing you are there.</p></div></div>
+      </section>
+      <section class="memories section" id="memories">
+        <div class="memory-heading"><p class="section-index">02 / FIVE FAVORITE FRAMES</p><h2>Our first little<br /><em>collection of us.</em></h2><p>Replace the five files in <code>assets/photos</code> with your own <code>01.jpg</code> through <code>05.jpg</code>. The cards are already waiting for your memories.</p></div>
+        <div class="photo-ribbon">
+          <figure class="memory-card memory-card--1"><div class="memory-card__image"><img src="assets/photos/01.png" alt="A favorite memory of Sherry and Austin" /><div class="photo-fallback"><span>01</span><b>our first<br />favorite</b></div></div><figcaption><span>01</span> the start of something sweet</figcaption></figure>
+          <figure class="memory-card memory-card--2"><div class="memory-card__image"><img src="assets/photos/02.jpg" alt="Sherry and Austin sharing a happy moment" /><div class="photo-fallback"><span>02</span><b>soft<br />moments</b></div></div><figcaption><span>02</span> when time felt extra kind</figcaption></figure>
+          <figure class="memory-card memory-card--3"><div class="memory-card__image"><img src="assets/photos/03.png" alt="A special memory from the first month" /><div class="photo-fallback"><span>03</span><b>you + me</b></div></div><figcaption><span>03</span> my favorite place is beside you</figcaption></figure>
+          <figure class="memory-card memory-card--4"><div class="memory-card__image"><img src="assets/photos/04.png" alt="A candid memory of Sherry and Austin" /><div class="photo-fallback"><span>04</span><b>little<br />laughs</b></div></div><figcaption><span>04</span> the joy in ordinary days</figcaption></figure>
+          <figure class="memory-card memory-card--5"><div class="memory-card__image"><img src="assets/photos/05.png" alt="A treasured photo of Sherry and Austin" /><div class="photo-fallback"><span>05</span><b>to be<br />continued</b></div></div><figcaption><span>05</span> only the first chapter</figcaption></figure>
+        </div>
+      </section>
+      <section class="days section">
+        <p class="section-index">03 / IN THE LITTLE THINGS</p>
+        <div class="days__top"><div class="days__number">30</div><div><h2>days closer.</h2><p>Not a long time by the calendar. More than enough time to know I am grateful we found each other.</p></div></div>
+        <div class="reasons"><article><span>01</span><h3>Your laugh</h3><p>the kind that makes everything else disappear for a second.</p></article><article><span>02</span><h3>Your heart</h3><p>soft, thoughtful, and so easy to feel safe around.</p></article><article><span>03</span><h3>Your presence</h3><p>how even the quiet moments feel special with you.</p></article><article><span>04</span><h3>Our tomorrow</h3><p>all the tiny adventures still waiting for us.</p></article></div>
+      </section>
+      <section class="garden" id="garden">
+        <div class="garden__copy"><p class="section-index">04 / A GARDEN FOR SHERRY</p><h2>Every tulip is<br /><em>a wish for us.</em></h2><p>Tap the garden and leave a little love behind.</p><button class="garden__button" id="plant-button">Plant a tulip <span>+</span></button></div>
+        <div class="garden__field" id="garden-field" aria-label="Interactive tulip garden"><img src="assets/tulip-bouquet.svg" alt="A bouquet of pink tulips" /><p><span id="bloom-count">7</span> wishes blooming</p></div>
+      </section>
+      <section class="letter section" id="letter">
+        <img class="letter__bear" src="assets/bear-letter.svg" alt="Cute bear holding a love letter" />
+        <article class="letter__paper"><p class="tiny-label">For Sherry, from Austin</p><h2>Happy first month,<br /><em>my love.</em></h2><div class="letter__body"><p>Sherry,</p><p>One month may sound small, but what we have already means so much to me. Thank you for every laugh, every check-in, every gentle moment, and every memory we are beginning to collect.</p><p>I made this for you because flowers fade, and I wanted to give you a little garden you could return to—a reminder that choosing you has been the easiest, sweetest choice.</p><p>Here is to our first month, and to every chapter still waiting for us.</p></div><p class="signature">Always yours, <strong>Austin</strong></p><button class="seal" id="seal" aria-label="Open the love seal">♡</button></article>
+        <p class="letter__side">one month down • forever to explore</p>
+      </section>
+      <section class="finale"><img src="assets/bears-hug.svg" alt="Two cute bears hugging" /><p class="scribble">correct answer!</p><h2>Happy monthiversary,<br /><em>Sherry.</em></h2><p>I love doing life with you.</p><a href="#home">Back to the beginning ↑</a></section>
+    </main>
+    <footer><p>Made with a full heart</p><p>Sherry <span>♡</span> Austin</p><p>Our first month</p></footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.3.27/dist/lenis.min.js"></script>
+  <script type="module" src="main.js?v=3"></script>
+</body>
+</html>
